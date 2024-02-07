@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Кастомизация списка</title>
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+}
+
+select:hover,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    
+}
+
+option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <label for="courses">Выберите направление:</label>
+    <select id="courses" name="courses">
+        <option disabled selected>Направление</option>
+        <option value="python">Python-разработчик</option>
+        <option value="chemistry">Химия</option>
+        <option value="graphic">Графический дизайнер</option>
+    </select>
+</body>
+</html>
